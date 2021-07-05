@@ -70,6 +70,7 @@ h1 {
   box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.4);
 }
 
+
 #socialMedia {
   float: right;
   margin-top: 30%;
@@ -77,6 +78,21 @@ h1 {
 
 #socialMedia a {
   margin: 3px;
+  
+}
+
+#socialMedia img {
+  transition: 0.5s;
+}
+
+#socialMedia img:hover {
+  transform: rotatey(180deg);
+  transition: 0.5s;
+}
+
+#socialMedia img:active {
+  transform: rotate(-90deg);
+  transition: 0.5s;
 }
 
 p.attribution {
