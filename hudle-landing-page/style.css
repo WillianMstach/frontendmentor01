@@ -4,11 +4,28 @@
 
 body {
   background-image: url("images/bg-desktop.svg");
-  background-repeat: no-repeat;
+  min-height:100vh;
+  margin:0;
+  position:relative;
   background-color: hsl(257, 40%, 49%);
+  background-attachment: fixed;
+  background-size: cover;
   font-family: 'Open Sans', sans-serif;
   color: #fff;
   font-size: 1em;
+}
+
+body::after {
+  content: '';
+  display: block;
+  height: 50px; /* Set same as footer's height */
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
 }
 
 #logo {
@@ -59,13 +76,15 @@ h1 {
 }
 
 #validate input:hover {
-  color: hsl(300, 69%, 71%);
+  background-color: hsl(300, 69%, 71%);
+  color: #fff;
   transition: 0.3s;
   box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.3);
 }
 
 #validate input:active {
-  color: hsl(300, 69%, 70%);
+  background-color: hsl(300, 69%, 71%);
+  color: #fff;
   transition: 0.3s;
   box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.4);
 }
@@ -96,7 +115,9 @@ h1 {
 }
 
 p.attribution {
-  margin: 5% 0 3% 0;
+  clear: both;
+  position: absolute;
+  margin: 0% 0 3% 0;
   width: 100%;
   text-align: center;
 }
