@@ -69,3 +69,18 @@ h1 {
   transition: 0.3s;
   box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.4);
 }
+
+#socialMedia {
+  float: right;
+  margin-top: 30%;
+}
+
+#socialMedia a {
+  margin: 3px;
+}
+
+p.attribution {
+  margin: 5% 0 3$ 0;
+  width: 100%;
+  text-align: center;
+}
