@@ -4,23 +4,33 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
   
   <title>Frontend Mentor | Huddle landing page with single introductory section</title>
 </head>
 <body>
   <header>
     <div id="logo">
-      <img src="images/logo.svg" alt="Logo da Huddle">     
+      <img src="images/logo.svg" alt="Logo da Huddle" width="15%">     
     </div>
   </header>
-  <div>
-    <h1 id="titulo">Build The Community Your Fans Will Love</h1>
-    <p id="texto">
-      Huddle re-imagines the way we build communities. You have a voice, but so does your audience.
-      Create connections with your users as you engage in genuine discussion.
-    </p> 
-    <input type="submit" value="Register" id="btValidate">
+  <div class="clearfix">
+    <div id="imagemMok" class="floatBox">
+      <img src="images/illustration-mockups.svg" alt="Imagem explicativa da Huddle" width="90%">
+    </div>
+    <div class="floatBox" id="content">
+      <h1 id="titulo">Build The Community Your Fans Will Love</h1>
+      <p id="texto">
+        Huddle re-imagines the way we build communities. You have a voice, but so does your audience.
+        Create connections with your users as you engage in genuine discussion.
+      </p>
+      <div id="validate"><input type="submit" value="Register"></div>
+    </div>
   </div>
 
   <footer>

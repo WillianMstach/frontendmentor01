@@ -1,0 +1,71 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("images/bg-desktop.svg");
+  background-repeat: no-repeat;
+  background-color: hsl(257, 40%, 49%);
+  font-family: 'Open Sans', sans-serif;
+  color: #fff;
+  font-size: 1em;
+}
+
+#logo {
+  margin-top: 3%;
+  margin-bottom: 5%;
+  margin-left: 5%;
+}
+
+#imagemMok {
+  margin-left: 8%;
+}
+
+h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.2em;
+  padding-top: 8px;
+}
+
+#content {
+  width: 35%;
+
+}
+
+.floatBox {
+  float: left;
+  width: 48vw;
+  padding: auto;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#validate input {
+  background-color: #fff;
+  border-style: none;
+  font-family: 'Poppins', sans-serif;
+  color: hsl(257, 40%, 49%);
+  font-size: 0.9em;
+  width: 36%;
+  height: 45px;
+  border-radius: 30px;
+  box-shadow: 0px 5px 5px 1px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  transition: 0.3s;
+}
+
+#validate input:hover {
+  color: hsl(300, 69%, 71%);
+  transition: 0.3s;
+  box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.3);
+}
+
+#validate input:active {
+  color: hsl(300, 69%, 70%);
+  transition: 0.3s;
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.4);
+}
