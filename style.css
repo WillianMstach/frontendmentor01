@@ -1,0 +1,85 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 5px;
+}
+
+.container > div {
+  background-color: blueviolet;
+}
+
+2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+.container {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 20vh 70vh 10vh;
+  grid-template: "h h" "m a" "f f";
+}
+
+header {
+  background-color: cadetblue;
+  height: 100px;
+  grid-area: h;
+}
+
+main {
+  background-color: chartreuse;
+  height: 100px;
+  grid-area: m;
+}
+
+aside {
+  background-color: coral;
+  height: 100px;
+  grid-area: a;
+}
+
+footer {
+  background-color: darkkhaki;
+  height: 100px;
+  grid-area: f;
+}
+*/
+
