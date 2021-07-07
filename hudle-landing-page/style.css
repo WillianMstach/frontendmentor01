@@ -27,6 +27,7 @@ body {
 header {
   height: 18%;
   padding-bottom: 8%;
+  padding-top: 8%;
 }
 header .logo {
   width: 40%;
@@ -56,7 +57,7 @@ main p{
 /*--- BOTÃO ---*/
 .btmReg {
   background-color: #fff;
-  width: 70%;
+  width: 200px;
   height: 32px;
   border-style: none;
   border-radius: 50px;
@@ -99,3 +100,66 @@ footer {
   text-align: center;
   padding-bottom: 10%;
 }
+
+/*--- MOBILE M 375px ---*/
+
+@media (min-width:375px) {
+  main h1 {
+    font-size: 1.3em;
+  }
+  main p{
+    font-size: 0.85em;
+  }
+  .btmReg {
+    height: 40px;
+  }
+}
+
+/*--- MOBILE M 425px ---*/
+
+@media (min-width:425px) {
+  main h1 {
+    font-size: 1.4em;
+  }
+  main p{
+    font-size: 0.95em;
+  }
+  .btmReg {
+    height: 45px;
+  }
+}
+
+
+
+/*
+@media (min-width: 430px) {
+  main h1 {
+  font-size: 1.6em;
+  }
+  main p{
+    font-size: 1em;
+  }
+  .btmReg {
+    height: 45px;
+    font-size: 1em;
+    transition: 0.5s;
+  }
+  .social-media {
+    grid-template-columns: 40px 40px 40px;
+    grid-template-rows: 40px;
+    grid-gap: 5%;
+    justify-content: center;
+    margin-bottom: 15%;
+    }
+}
+
+@media (min-width:550px) {
+  header {
+    height: 102px;
+    padding-top: 25px;
+  }
+  header .logo {
+    width: 185px;
+  }
+}
+*/
