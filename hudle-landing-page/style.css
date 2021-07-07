@@ -16,6 +16,7 @@ body {
   background-image: url(images/bg-mobile.svg);
   background-repeat: no-repeat;
   background-size: 100%;
+  position: relative;
 }
 .content {
   width: 100%;
@@ -42,6 +43,7 @@ main {
 }
 .mainImg {
   padding-bottom: 18%;
+  width: 100%;
 }
 main h1 {
   font-weight: 600;
@@ -101,9 +103,14 @@ footer {
   padding-bottom: 10%;
 }
 
-/*--- MOBILE M 375px ---*/
+/*--- MOBILE M 500px ---*/
 
-@media (min-width:375px) {
+@media (min-width:500px) {
+  header {
+    height: 18%;
+    padding-bottom: 25px;
+    padding-top: 25px;
+  }
   main h1 {
     font-size: 1.3em;
   }
@@ -112,21 +119,89 @@ footer {
   }
   .btmReg {
     height: 40px;
+    font-size: 0.8em;
   }
 }
 
-/*--- MOBILE M 425px ---*/
+/*--- MOBILE M 680px ---*/
 
-@media (min-width:425px) {
+@media (min-width:680px) {
+  .content {
+    padding: 0 6% 0 6%;
+  }
+  header .logo {
+    width: 20%;
+  }
+  main {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    height: 45%;
+  }
   main h1 {
-    font-size: 1.4em;
+    font-size: 1.3em;
+    height: auto;
+    padding: 0 0% 5% 5%;
+    text-align: left;
   }
   main p{
-    font-size: 0.95em;
+    font-size: 0.7em;
+    text-align: justify;
+    padding: 0 5%;
+    height: fit-content;
+  }
+  .btmReg {
+    height: 35px;
+    width: 130px;
+    font-size: 0.7em;
+    margin: 5% 0 0 5%;
+    float: left;
+    }
+  .social-media {
+    height: 35px;
+    margin-bottom: 5%;
+    display: grid;
+    grid-template-columns: 25px 25px 25px;
+    grid-template-rows: 25px;
+    grid-gap: 2%;
+    justify-content: right;
+    }
+  footer {
+    position:absolute;
+    bottom:0;
+    padding-bottom: 1%;
+  }
+  footer #break{
+    display: none;
+  }
+}
+/*--- MOBILE ML 800px ---*/
+@media (min-width:800px) {
+  .content {
+    padding: 0 10% 0 10%;
+  }
+  main h1 {
+    font-size: 2em;
+    height: auto;
+    padding: 10% 0% 5% 10%;
+    text-align: left;
+  }
+  main p{
+    font-size: 0.9em;
+    text-align: justify;
+    padding: 0 5% 0 10%;
+    height: fit-content;
   }
   .btmReg {
     height: 45px;
-  }
+    width: 150px;
+    font-size: 0.9em;
+    margin: 5% 0 0 10%;
+    float: left;
+    }
+      .social-media {
+        margin-top: 10%;
+    }
 }
 
 
